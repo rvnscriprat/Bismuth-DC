@@ -2,7 +2,7 @@
 
 A frosted Discord theme with a monochrome wallpaper.
 
-![Basalt preview](ss/prev.png)
+<img width="2722" height="1802" alt="image" src="https://github.com/user-attachments/assets/0cfc45ca-5184-4be8-b5ae-e3c49aa1416f" />
 
 ## Customize
 
