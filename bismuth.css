@@ -10,18 +10,7 @@
 
 :root {
   /* ---- wallpaper ---- */
-
-  	/* corner store */ 
-	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0086.jpg);*/
-
-	/* stripes */
 	 --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0130.jpg); 
-
-	/* skyscraper */
-	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0097.jpg); */
-
-	/* overhead street */
-	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0111.jpg); */
 
   --bg-size: cover;
   --bg-position: center;
