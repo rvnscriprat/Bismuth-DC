@@ -1,38 +1,49 @@
 /**
- * @name Basalt
- * @author Rogo7070
+ * @name Bismuth
+ * @author rvnscriprat
  * @version 1.0
- * @description A clean frosted theme.
- * @source https://github.com/r480github/Basalt-DC
+ * @description A clean frosted theme, with a new colorful twist.
+ * @source https://github.com/rvnscriprat/Bismuth-DC
  */
 
-:root {
-  /* Change your wallpaper here */
-  /* works best with darker background*/
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css");
 
-  --bg-image: url(https://raw.githubusercontent.com/r480github/GalaxyV7/refs/heads/main/src/lib/img/bg/default.jpg);
+:root {
+  /* ---- wallpaper ---- */
+
+  	/* corner store */ 
+	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0086.jpg);*/
+
+	/* stripes */
+	 --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0130.jpg); 
+
+	/* skyscraper */
+	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0097.jpg); */
+
+	/* overhead street */
+	/* --bg-image: url(https://raw.githubusercontent.com/dusklinux/images/refs/heads/main/dark/0111.jpg); */
+
   --bg-size: cover;
   --bg-position: center;
   --bg-blur: 5px;
-  --bg-brightness: 0.5;
-  --tint: 0, 0, 0;
-  --tint-app: 0.5;
-  --tint-panels: 0.3;
+  --bb-brightness: 0.2;
+  --tint: 24, 24, 37;
+  --tint-app: 0.8;
+  --tint-panels: 0.6;
   --glass: rgba(var(--tint), 0.36);
   --glass-heavy: rgba(var(--tint), 0.63);
-  --shadow-pop: 0 10px 41px 5px rgba(var(--tint), 0.5);
-
+  --shadow-pop: 0 10px 41px 5px rgba(var(--tint), 0.44);
   /*blur*/
   --blur-sm: 10px;
   --blur-lg: 20px;
 
   /*mentions*/
-  --accent: 248, 248, 248;
+  --accent: 245, 194, 231;
   --mention-fill: rgba(var(--accent), 0.14);
   --mention-fill-hover: rgba(var(--accent), 0.08);
   --mention-bar: rgba(var(--accent), 0.97);
 
-  /*scrool bar*/
+  /*scroll bar*/
   --scrollbar-thin-track: transparent;
   --scrollbar-auto-track: transparent;
   --scrollbar-thin-thumb: rgba(var(--accent), 0.18);
@@ -40,17 +51,12 @@
   --scrollbar-auto-scrollbar-color-thumb: rgba(var(--accent), 0.18);
   --scrollbar-auto-scrollbar-color-track: transparent;
 }
-/* 
-uncomment this for mica or acrylic to work
-------------
+/* uncomment this for mica or acrylic to work
 html,
 body {
   --bg-image: ;
   background-color: transparent;
-}
-------------
-*/
-
+} */
 body:has(#app-mount)::before {
   content: "";
   position: fixed;
@@ -71,18 +77,6 @@ body:has(#app-mount)::before {
     transform: scale(1.1);
   }
 }
-[class*="outerContainer_"]
-  [class*="container__"]
-  [class*="modalContent_"]
-  [class*="modalContentInner_"]
-  [class*="container_"]
-  > div,
-[class*="outerContainer_"]
-  [class*="container__"]
-  [class*="modalContent_"]
-  [class*="modalContentInner_"]
-  [class*="container_"]
-  [class*="contentHeader_"],
 [class*="appAsidePanelWrapper_"],
 [class*="notAppAsidePanel_"],
 [class*="app_"],
@@ -106,6 +100,7 @@ body:has(#app-mount)::before {
 [class*="chatGradientBase__"],
 [class*="chatTypingGradientAtBottom__"],
 [class*="chatTypingGradientNotAtBottom__"],
+[class*="upperContainer__"] > div,
 [class*="privateChannels_"],
 [class*="guilds__"] > div,
 [class*="tree_"] > div,
@@ -118,22 +113,20 @@ body:has(#app-mount)::before {
 [class*="tabBody__"],
 [class*="peopleColumn__"],
 [class*="panels__"],
+[class*="outerContainer_"]
+  [class*="container__"]
+  div:not(
+    .layer_bc663c .outerContainer__8a031 div,
+    [class*="baseSettingWrapper__"]
+      [class*="container__"]
+      [class*="control__"]
+      div
+  ),
 [class*="wrapper_"]:has(> [class*="callContainer_"]),
 [class*="callContainer_"],
 [class*="callContainer_"]
   [class*="root_"]:not([class*="tileSizer_d6271c"] [class*="root__"]),
-[class*="chat_"] [class*="channelChatWrapper_"],
-[class*="upperContainer__"] > div,
-[class*="focusLock__"]
-  [class*="fullscreenOnMobile__"]
-  [class*="layoutContainer__"]
-  [class*="user-profile-modal-v2"],
-[class*="focusLock__"]
-  [class*="fullscreenOnMobile__"]
-  [class*="layoutContainer__"]
-  [class*="user-profile-modal-v2"]
-  [class*="profileContentColumns__"]
-  [class*="profile__"] {
+[class*="chat_"] [class*="channelChatWrapper_"] {
   background: transparent !important;
 }
 
@@ -162,9 +155,8 @@ body:has(#app-mount)::before {
 }
 
 /*dms*/
-[class*="privateChannels_"] [class*="scroller__"] {
+.privateChannels_e6b769 .scroller__99e7c {
 }
-
 [class*="privateChannels_"] [class*="selected_"],
 [class*="privateChannels_"] [class*="selected_"] [class*="link__"] {
   background-color: var(--glass);
@@ -238,11 +230,13 @@ body:has(#app-mount)::before {
   background-color: var(--glass);
 }
 [class*="replying__"] {
-  background-color: rgba(var(--accent), 0.1);
+  background-color: rgba(13, 154, 248, 0.171);
+  /* can you find a more fitting color than blue?*/
 }
 [class*="replying__"]::before {
-  background-color: rgba(var(--accent), 0.9);
+  background-color: rgba(13, 154, 248, 0.925);
 }
+
 [class*="replying__"]:hover,
 [class*="replying__"] [class*="selected__"] {
   background-color: var(--glass) !important;
@@ -289,7 +283,7 @@ body:has(#app-mount)::before {
   width: calc(100% + 13px);
   height: 66px;
 }
-[class*="panels__"] [class*="wrapper_"] {
+.wrapper_e131a9 {
   width: calc(100% + 13px);
 }
 /*friends tab*/
@@ -316,12 +310,11 @@ body:has(#app-mount)::before {
   background: transparent !important;
 }
 
-/*` menu*/
+/*settings menu*/
 [class*="outerContainer_"] [class*="container__"] [class*="modalContent_"] {
   background-color: var(--glass) !important;
   backdrop-filter: blur(var(--blur-sm));
 }
-/*settings menu*/
 
 /*commands menu*/
 [class*="chat_"]
@@ -362,7 +355,7 @@ body:has(#app-mount)::before {
   backdrop-filter: blur(var(--blur-lg));
   border-radius: 0 !important;
 }
-[class*="channelTextArea_"] [class*="autocomplete__"] [class*="listItems_"] {
+.listItems_affa7e {
   margin-top: -8px;
 }
 
@@ -380,7 +373,7 @@ body:has(#app-mount)::before {
   transform: translateX(5px);
 }
 
-[class*="sidebar__"] [class*="wrapper_"] [class*="tree_"] {
+.sidebar__5e434 .wrapper_ef3116 .tree_ef3116 {
   background-color: transparent !important;
 }
 
@@ -395,26 +388,4 @@ body:has(#app-mount)::before {
 /* vc chat */
 [class*="chat_"] [class*="channelChatWrapper_"] {
   background-color: var(--glass-heavy) !important;
-}
-
-
-/*user profile editor*/
-[class*="fullscreenOnMobile__"]
-  [class*="layoutContainer__"]
-  [class*="profileContentOuter__"] {
-  background-color: var(--glass);
-  backdrop-filter: blur(var(--blur-sm));
-  box-shadow: var(--shadow-pop);
-}
-[class*="layer_"] [class*="card__"] {
-  background-color: var(--glass);
-  backdrop-filter: blur(var(--blur-sm));
-}
-[class*="editingPanel__"]
-  [class*="scrollRegion__"]
-  [class*="withFloatingFooterSafePadding__"],
-[class*="editingPanel__"] [class*="container__"] [class*="scrollRegion__"],
-[class*="editingPanel__"] [class*="container__"] [class*="header__"] {
-  background-color: var(--glass);
-  backdrop-filter: blur(var(--blur-sm));
 }
