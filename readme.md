@@ -1,4 +1,6 @@
-There aren't really any special changes to Basalt aside from my specific setup so I'll leave the original README more or less untouched.
+# Foreword
+
+There aren't really any special changes to Basalt aside from my specific setup and the catppuccin mocha color scheme import, so I'll leave the original README more or less untouched.
 
 # Bismuth
 
