@@ -1,8 +1,8 @@
 There aren't really any special changes to Basalt aside from my specific setup so I'll leave the original README more or less untouched.
 
-# Basalt
+# Bismuth
 
-A frosted Discord theme with a monochrome wallpaper.
+A frosted Discord theme with a splash of color.
 
 <img width="2722" height="1802" alt="image" src="https://github.com/user-attachments/assets/0cfc45ca-5184-4be8-b5ae-e3c49aa1416f" />
 
