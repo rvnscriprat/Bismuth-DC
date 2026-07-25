@@ -1,3 +1,5 @@
+There aren't really any special changes to Basalt aside from my specific setup so I'll leave the original README more or less untouched.
+
 # Basalt
 
 A frosted Discord theme with a monochrome wallpaper.
